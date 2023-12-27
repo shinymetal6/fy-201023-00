@@ -54,8 +54,8 @@ MEMORY
 /* Define output sections */
 SECTIONS
 {
-	.osMemPool 0x38000000 : {KEEP(*(.osMemPool))}
-	.osSegment 0x38008000 : {KEEP(*(.osSegment))}
+	.osMemPool 0x20000000 : {KEEP(*(.osMemPool))}
+	.osSegment 0x20008000 : {KEEP(*(.osSegment))}
   /* The startup code goes first into FLASH */
   .isr_vector :
   {

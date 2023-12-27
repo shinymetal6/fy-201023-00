@@ -16,8 +16,22 @@ RM := rm -rf
 -include A_os/modules/modbus/subdir.mk
 -include A_os/kernel/HwDevices/subdir.mk
 -include A_os/kernel/subdir.mk
+-include A_os/drivers/rmii/subdir.mk
 -include A_os/drivers/nrf24l01/subdir.mk
--include A_Libraries/Drivers/Common/Components/Memories/qspi/subdir.mk
+-include A_os/drivers/flash/subdir.mk
+-include A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/subdir.mk
+-include A_Libraries/ExternalLibraries/STM32H7/LwIp/src/netif/subdir.mk
+-include A_Libraries/ExternalLibraries/STM32H7/LwIp/src/core/ipv6/subdir.mk
+-include A_Libraries/ExternalLibraries/STM32H7/LwIp/src/core/ipv4/subdir.mk
+-include A_Libraries/ExternalLibraries/STM32H7/LwIp/src/core/subdir.mk
+-include A_Libraries/ExternalLibraries/STM32H7/LwIp/src/apps/mqtt/subdir.mk
+-include A_Libraries/ExternalLibraries/STM32H7/LwIp/src/api/subdir.mk
+-include A_Libraries/ExternalLibraries/STM32H7/FatFs/src/option/subdir.mk
+-include A_Libraries/ExternalLibraries/STM32H7/FatFs/src/subdir.mk
+-include A_Libraries/Drivers/STM32H7/LWIP/Target/subdir.mk
+-include A_Libraries/Drivers/STM32H7/LWIP/App/subdir.mk
+-include A_Libraries/Drivers/STM32H7/FatFs/Target/subdir.mk
+-include A_Libraries/Drivers/STM32H7/FatFs/App/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

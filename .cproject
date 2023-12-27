@@ -44,6 +44,14 @@
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.833658340" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="../Core/Inc"/>
+									<listOptionValue builtIn="false" value="../../A_Libraries/Drivers"/>
+									<listOptionValue builtIn="false" value="../../A_Libraries/ExternalLibraries/STM32H7/FatFs/src"/>
+									<listOptionValue builtIn="false" value="../../A_os/drivers/rmii"/>
+									<listOptionValue builtIn="false" value="../../A_Libraries/Drivers/STM32H7/LwIP/App"/>
+									<listOptionValue builtIn="false" value="../../A_Libraries/Drivers/STM32F7/LwIP/Target"/>
+									<listOptionValue builtIn="false" value="../../A_Libraries/ExternalLibraries/STM32H7/LwIp/src/include/lwip"/>
+									<listOptionValue builtIn="false" value="../../A_Libraries/ExternalLibraries/STM32H7/LwIp/system"/>
+									<listOptionValue builtIn="false" value="../../A_Libraries/ExternalLibraries/STM32H7/LwIp/src/include"/>
 									<listOptionValue builtIn="false" value="../Drivers/STM32H7xx_HAL_Driver/Inc"/>
 									<listOptionValue builtIn="false" value="../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32H7xx/Include"/>
@@ -74,8 +82,8 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="ExternalLibraries|Drivers/Common/Components/LCD|Drivers/Common/Components/Sensors|Drivers/Common/Components/Nfc|Drivers/Common/Components/Network|Drivers/STM32H7/USB_Device|Drivers/STM32H7/mbedTLS|Drivers/STM32H7/LwIp|Drivers/STM32H7/FatFs|Drivers/STM32U5|Drivers/STM32H5|Drivers/STM32F7|Components" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="A_Libraries"/>
 						<entry excluding="A_processes/ModBus" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="A_os"/>
+						<entry excluding="Drivers/STM32H7/LwIp|ExternalLibraries/STM32H7/LwIp/src/netif/ppp|ExternalLibraries/STM32H7/STM32_USB_Device_Library|ExternalLibraries/STM32H7/mbedTLS|ExternalLibraries/STM32U5|ExternalLibraries/STM32H5|ExternalLibraries/STM32F7|ExternalLibraries/Common|Drivers/STM32F7|Drivers/Common/Components/Memories/qspi/w25q_mem.c|Drivers/STM32H5|Drivers/Common/Components/Memories/qspi|Drivers/STM32H7/mbedTLS|Components|Drivers/Common/Components/LCD|Drivers/Common/Components/Nfc|Drivers/STM32H7/USB_Device|Drivers/STM32U5|Drivers/Common/Components/Network|Drivers/Common/Components/Sensors|Drivers/Common/Components/Memories" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="A_Libraries"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry excluding="STM32H743/ModBus" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="A_os_SampleUserProcesses"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
@@ -153,8 +161,8 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="ExternalLibraries|Drivers/Common/Components/LCD|Drivers/Common/Components/Sensors|Drivers/Common/Components/Nfc|Drivers/Common/Components/Network|Drivers/STM32H7/USB_Device|Drivers/STM32H7/mbedTLS|Drivers/STM32H7/LwIp|Drivers/STM32H7/FatFs|Drivers/STM32U5|Drivers/STM32H5|Drivers/STM32F7|Components" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="A_Libraries"/>
 						<entry excluding="A_processes/ModBus" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="A_os"/>
+						<entry excluding="Drivers/STM32H7/LwIp|ExternalLibraries/STM32H7/LwIp/src/netif/ppp|ExternalLibraries/STM32H7/STM32_USB_Device_Library|ExternalLibraries/STM32H7/mbedTLS|ExternalLibraries/STM32U5|ExternalLibraries/STM32H5|ExternalLibraries/STM32F7|ExternalLibraries/Common|Drivers/STM32F7|Drivers/Common/Components/Memories/qspi/w25q_mem.c|Drivers/STM32H5|Drivers/Common/Components/Memories/qspi|Drivers/STM32H7/mbedTLS|Components|Drivers/Common/Components/LCD|Drivers/Common/Components/Nfc|Drivers/STM32H7/USB_Device|Drivers/STM32U5|Drivers/Common/Components/Network|Drivers/Common/Components/Sensors|Drivers/Common/Components/Memories" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="A_Libraries"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry excluding="STM32H743/ModBus" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="A_os_SampleUserProcesses"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>

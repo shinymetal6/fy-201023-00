@@ -5,23 +5,23 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-/Devel/Stm32_13.1/A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/sys_arch.c 
+/Devel/Stm32_13.1/A_Libraries/Drivers/STM32H7/FatFs/App/fatfs.c 
 
 OBJS += \
-./A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/sys_arch.o 
+./A_Libraries/Drivers/STM32H7/FatFs/App/fatfs.o 
 
 C_DEPS += \
-./A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/sys_arch.d 
+./A_Libraries/Drivers/STM32H7/FatFs/App/fatfs.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/sys_arch.o: /Devel/Stm32_13.1/A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/sys_arch.c A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/subdir.mk
+A_Libraries/Drivers/STM32H7/FatFs/App/fatfs.o: /Devel/Stm32_13.1/A_Libraries/Drivers/STM32H7/FatFs/App/fatfs.c A_Libraries/Drivers/STM32H7/FatFs/App/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../../A_Libraries/Drivers -I../../A_Libraries/ExternalLibraries/STM32H7/FatFs/src -I../../A_os/drivers/rmii -I../../A_Libraries/Drivers/STM32H7/LwIP/App -I../../A_Libraries/Drivers/STM32F7/LwIP/Target -I../../A_Libraries/ExternalLibraries/STM32H7/LwIp/src/include/lwip -I../../A_Libraries/ExternalLibraries/STM32H7/LwIp/system -I../../A_Libraries/ExternalLibraries/STM32H7/LwIp/src/include -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "$@"
 
-clean: clean-A_Libraries-2f-ExternalLibraries-2f-STM32H7-2f-LwIp-2f-system-2f-OS
+clean: clean-A_Libraries-2f-Drivers-2f-STM32H7-2f-FatFs-2f-App
 
-clean-A_Libraries-2f-ExternalLibraries-2f-STM32H7-2f-LwIp-2f-system-2f-OS:
-	-$(RM) ./A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/sys_arch.cyclo ./A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/sys_arch.d ./A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/sys_arch.o ./A_Libraries/ExternalLibraries/STM32H7/LwIp/system/OS/sys_arch.su
+clean-A_Libraries-2f-Drivers-2f-STM32H7-2f-FatFs-2f-App:
+	-$(RM) ./A_Libraries/Drivers/STM32H7/FatFs/App/fatfs.cyclo ./A_Libraries/Drivers/STM32H7/FatFs/App/fatfs.d ./A_Libraries/Drivers/STM32H7/FatFs/App/fatfs.o ./A_Libraries/Drivers/STM32H7/FatFs/App/fatfs.su
 
-.PHONY: clean-A_Libraries-2f-ExternalLibraries-2f-STM32H7-2f-LwIp-2f-system-2f-OS
+.PHONY: clean-A_Libraries-2f-Drivers-2f-STM32H7-2f-FatFs-2f-App
 
